@@ -21,6 +21,6 @@ sudo -u $username -i -- wp language core activate $3
 
 # Install required plugins
 echo "Installing required plugins..."
-sudo -u $username -i -- wp plugin install WooCommerce --activate
+sudo -u $username -i -- wp plugin install woocommerce --activate
 
 echo "Done!"
