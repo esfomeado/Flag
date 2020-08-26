@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo $3
+
 username=$3
 
 # Reset Wordpress Installation
