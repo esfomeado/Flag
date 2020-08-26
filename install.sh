@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo $3
-
 username=$3
 
 # Reset Wordpress Installation
@@ -24,5 +22,9 @@ sudo -u $username -i -- wp site switch-language $5
 # Install required plugins
 echo "Installing required plugins..."
 sudo -u $username -i -- wp plugin install woocommerce --activate
+
+# Install theme
+echo "Installing theme..."
+sudo -u $username -i -- wp theme install $6 --activate
 
 echo "Done!"
