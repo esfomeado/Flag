@@ -8,7 +8,7 @@ sudo -u $username -i -- wp db reset --yes
 
 # Install Wordpress
 echo "Installing Wordpress..."
-sudo -u $username -i -- wp core install --url=$1 --title=$2 --admin_user=$3 --admin_password=$4 --admin_email=store@impactzero.pt
+sudo -u $username -i -- wp core install --url=$1 --title="$2" --admin_user=$3 --admin_password=$4 --admin_email=store@impactzero.pt
 
 # Remove demo content
 echo "Removing demo content..."
